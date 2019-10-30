@@ -33,7 +33,7 @@
             <button class="subtitle-btn"></button>
           </div>
         </div>
-        <div class="header__scroll">Scroll to see more</div>
+        <div class="header__scroll">Scroll to see more<a href="#"><img class="scroll-btn" src="./assets/images/scroll-btn.svg" alt=""></a></div>
       </div>
     </header>
     <section class="intro" id="intro">
@@ -71,8 +71,13 @@
             <button class="button">Learn more</button>
           </div>
           <div class="features__right">
-            <div class="features__slider">
-              <div class="slider__item"><img src="./assets/images/features.jpg" alt=""></div>
+            <div class="features-slider">
+              <btn class="features-slider__btn-prev"></btn>
+              <btn class="features-slider__btn-next"></btn>
+              <div class="features-slider__item">
+                <div class="slider__title">Mobile Apps</div><img src="./assets/images/features.jpg" alt="">
+                <div class="slider__count">1/3</div>
+              </div>
             </div>
           </div>
         </div>
@@ -84,8 +89,8 @@
           <h3 class="title">Subscribe to our newsletter</h3>
           <div class="subtitle">Cras pulvinar mattis nunc sed blandit.</div>
           <form action="" method="post">
-            <input type="email" name="" placeholder="Enter email">
-            <input type="submit" value="Subscribe">
+            <input type="email" name="" placeholder="Enter email"><span> 
+              <input type="submit" value="Subscribe"></span>
           </form>
         </div>
       </div>

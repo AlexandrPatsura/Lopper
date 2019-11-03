@@ -18,12 +18,10 @@ module.exports = function () {
     ], {
       verbose: true
     }))
-    .pipe($.gulp.dest($.paths.images.dest));
-  });
-
-  imagemin(['src/images/**/*.{jpg,jpeg,png}'], 'build/assets/images/', {
-    use: [
-      imageminWebp({ quality: 50 })
-    ]
+    .pipe($.gulp.dest($.paths.images.dest), {
+      use: [
+        imageminWebp({ quality: 50 })
+      ]
+    });
   });
 }

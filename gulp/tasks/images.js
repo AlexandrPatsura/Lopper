@@ -13,7 +13,9 @@ module.exports = function () {
           { cleanupIDs: false }
         ]
       })
-    ]))
+    ], {
+      verbose: true
+    }))
     .pipe($.gulp.dest($.paths.images.dest));
   });
 }

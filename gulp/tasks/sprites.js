@@ -1,6 +1,6 @@
 // svg
 const svgSprite      = require('gulp-svg-sprite');
-const spriteConfig   = require('../../sprite.config.js');
+const spriteConfig   = require('../../sprite.config');
 
 module.exports = function () {
   $.gulp.task('sprites', function () {

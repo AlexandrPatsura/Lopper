@@ -1,4 +1,6 @@
 // images
+const imagemin       = require('gulp-imagemin');
+const imageminWebp   = require('imagemin-webp');
 
 module.exports = function () {
   $.gulp.task('images', function () {
@@ -17,5 +19,11 @@ module.exports = function () {
       verbose: true
     }))
     .pipe($.gulp.dest($.paths.images.dest));
+  });
+
+  imagemin(['src/images/**/*.{jpg,jpeg,png}'], 'build/assets/images/', {
+    use: [
+      imageminWebp({ quality: 50 })
+    ]
   });
 }

@@ -1,0 +1,34 @@
+section.features#features
+  .container
+    .features__inner
+      .features__left
+        .suptitle
+          | Benefits
+        h3.title Shaping the future
+        .subtitle
+          | Eget nunc scelerisque viverra mauris in aliquam. Dignissim sodales ut eu sem integer vitae. Libero nunc consequat interdum varius.
+        .features__text
+          p Magna sit amet purus gravida. Sit amet porttitor eget dolor morbi non.
+
+          p Lectus vestibulum mattis ullamcorper velit sed ullamcorper.
+
+          p Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Dui faucibus in ornare quam viverra.
+
+          p Posuere ac ut consequat semper viverra.
+        button.button Learn more
+      .features__right
+        .features-slider
+          .features-slider__item
+            picture
+              source(srcset="./assets/images/features.webp")
+              img(src="./assets/images/features.jpg", alt="")
+            .slider__title Mobile Apps
+            
+            .slider__nav
+              .slider__count 1/3
+              a(href="#").slider__btn-prev
+                svg.slider__sprite
+                  use(xlink:href=`assets/images/sprites/sprite.svg#arrow-prev`)
+              a(href="#").slider__btn-next
+                svg.slider__sprite
+                  use(xlink:href=`assets/images/sprites/sprite.svg#arrow-next`)

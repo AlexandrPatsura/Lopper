@@ -1,0 +1,74 @@
+footer.footer#footer
+  .container.footer__inner
+    .footer__block-logo
+      .footer__logo
+        a(href="#")
+          img(src="./assets/images/footer-logo.png", alt="")
+      .descrription
+        | Eu augue ut lectus arcu bibendum at.
+    .footer__block
+      .footer__block-item
+        .footer__nav
+          .footer__menu
+            .footer__tilte Menu
+            ul
+              -
+                var pages = [
+                  ["#", "Home"],
+                  ["#", "About"],
+                  ["#", "Servces"],
+                  ["#", "News"],
+                  ["#", "Gallery"],
+                  ["#", "Contact"]
+                ]
+              each page in pages
+                li
+                  a(href=`${page[0]}`) #{page[1]}
+          .footer__menu
+            .footer__tilte Services
+            ul
+              -
+                var pages = [
+                  ["#", "Lorem"],
+                  ["#", "Ipsum"],
+                  ["#", "Dolor"],
+                  ["#", "Sit Amet"]
+                ]
+              each page in pages
+                li
+                  a(href=`${page[0]}`) #{page[1]}
+        .footer__contact
+          .footer__tilte Contact us
+          p 
+            svg.mail__sprite
+              use(xlink:href=`assets/images/sprites/sprite.svg#mail`)
+            a(href="mailto:contact@lop.com") contact@lop.com
+          p 
+            svg.phone__sprite
+              use(xlink:href=`assets/images/sprites/sprite.svg#phone`)
+            a(href="tel:+856693456") 856 - 693 - 456
+        .footer__followus
+          .footer__tilte Follow us
+          ul.footer__social
+            -
+              var socials = [
+                ["#", "twitter"],
+                ["#", "facebook"],
+                ["#", "instagram"],
+                ["#", "youtube"],
+                ["#", "m"]
+              ]
+            each social in socials
+              li
+                a(href=`${social[0]}`, target="_blank")
+                  svg(class=`${social[1]}`)
+                    use(xlink:href=`assets/images/sprites/sprite.svg#${social[1]}`)
+      //- .footer__block-item
+  .footer__copyright
+    | &copy; 2019 Lopper by mariuszdaniel. All right reserved.
+
+svg.gradient-instagram
+  lineargradient#instagram(x2='1', y2='1')
+    stop(offset='0%', stop-color='#F8ED34')
+    stop(offset='50%', stop-color='#EA118D')
+    stop(offset='100%', stop-color='#2E368F')

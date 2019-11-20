@@ -1,0 +1,243 @@
+.footer {
+  background-color: #150433;
+  padding-top: 126px;
+  padding-bottom: 60px;
+
+  @media screen and (max-width: 1024px) {
+    padding-top: 100px;
+  }
+
+  @media screen and (max-width: 425px) {
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+
+  &__inner {
+    display: flex;
+
+    @media screen and (max-width: 425px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__block-logo {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 294px;
+    // padding-right: 128px;
+    padding-bottom: 64px;
+
+    @media screen and (max-width: 1024px) {
+      flex-basis: 280px;
+    }
+
+    @media screen and (max-width: 425px) {
+      flex-basis: auto;
+      text-align: center;
+    }
+  }
+
+  &__block {
+    flex-grow: 1;
+  }
+
+  &__block-item {
+    display: flex;
+    flex-wrap: wrap;
+    // flex-grow: 1;
+    justify-content: space-between;
+    padding-bottom: 14px;
+
+    @media screen and (max-width: 425px) {
+      justify-content: center;
+    }
+  }
+
+  &__logo {
+    padding-top: 5px;
+    padding-bottom: 25px;
+  }
+
+  &__nav {
+    display: flex;
+    margin-right: 36px;
+    margin-bottom: 50px;
+
+    width: 210px;
+
+    @media screen and (max-width: 768px) {
+      width: 190px;
+    }
+
+    ul {
+      padding-top: 27px;
+    }
+
+    a {
+      font-weight: bold;
+      font-size: 12.6px;
+      line-height: 28px;
+      letter-spacing: 1px;
+
+      &:hover {
+        color: rgba($primary-color, .5)
+      }
+    }
+  }
+
+  .footer__menu:not(:last-child) {
+    padding-right: 36px;
+  }
+
+  a {
+    color: $primary-color;
+  }
+
+  .mail__sprite {
+    width: 12px;
+    height: 9px;
+  }
+
+  .phone__sprite {
+    width: 9px;
+    height: 14px;
+    margin-right: 3px;
+  }
+
+  .descrription {
+    width: 166px;
+    font-size: 16.2px;
+    line-height: 26px;
+    color: $primary-color;
+
+    @media screen and (max-width: 425px) {
+      width: 100%;
+    }
+  }
+
+  &__tilte {
+    display: inline-block;
+    position: relative;
+    font-weight: 800;
+    font-size: 12.6px;
+    line-height: 26px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: $primary-color;
+    padding-bottom: 8px;
+
+    &:after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      width: 95%;
+      height: 1px;
+      background: $red;
+    }
+  } 
+
+  &__contact {
+   margin-right: 36px;
+   margin-bottom: 50px;
+
+    .footer__tilte {
+      margin-bottom: 27px;
+    }
+
+    p {
+      padding-bottom: 7px;
+    }
+
+    a {
+      padding-left: 18px;
+      font-size: 16.2px;
+      line-height: 26px;
+      mix-blend-mode: normal;
+    }
+  }
+
+  &__followus {
+    margin-bottom: 50px;
+  }
+
+  &__social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 46px;
+    width: 264px;
+    
+    transition: .3s linear;
+
+    @media screen and (max-width: 1024px) {
+      width: 165px;
+    }
+
+    svg {
+      fill: $primary-color;
+    }
+
+    .twitter {
+      width: 18px;
+      height: 15px;
+  
+      &:hover {
+        fill: #1da1f2;
+      }
+    }
+
+    .facebook {
+      width: 18px;
+      height: 18px;
+  
+      &:hover {
+        fill: #39569a;
+      }
+    }
+
+    .instagram {
+      width: 18px;
+      height: 18px;
+  
+      &:hover {
+        fill: url(#instagram) #F8ED34;;
+      }
+    }
+
+    .youtube {
+      width: 26px;
+      height: 18px;
+  
+      &:hover {
+        fill: #f70000;
+      }
+    }
+
+    .m {
+      width: 18px;
+      height: 18px;
+      
+      &:hover {
+        fill: $secondary-color;
+      }
+    }
+  }
+
+  &__copyright {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 11.7px;
+    line-height: 19px;
+    color: $primary-color;
+    margin-bottom: 50px;
+  }
+}
+
+.gradient-instagram {
+  position: absolute;
+  width: 0;
+  height: 0;
+}

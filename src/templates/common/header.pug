@@ -1,0 +1,40 @@
+header.header#header
+  .container.header__mainscreen
+    .header__navbar
+      .header__logo
+        a(href="#")
+          img(src="./assets/images/header-logo.png", alt="")
+      ul.menu
+        -
+          var pages = [
+            ["#", "Home"],
+            ["#", "Services"],
+            ["#", "Work"],
+            ["#", "About"],
+          ]
+        each page in pages
+          li.menu-item
+            a(href=`${page[0]}`).menu-link #{page[1]}
+      .phone
+        svg.phone__sprite
+            use(xlink:href=`assets/images/sprites/sprite.svg#phone`)
+        a(href="tel:+01666693456") (01) 666 - 693 - 456
+      .burger__menu
+        span.burger
+    .header__headline
+      .header__suptitle
+        | What we do?
+      .header__title
+        h2 We grow<br>
+          span great business
+      .header__subtitle
+        a.subtitle-btn
+          | Velit laoreet id donec ultrices. Ut lectus arcu bibendum varius.
+          span.subtitle__sprite
+            svg
+              use(xlink:href=`assets/images/sprites/sprite.svg#arrow`)
+    .header__scroll
+      | Scroll to see more
+      a(href="#intro")
+        svg.scroll__sprite
+          use(xlink:href=`assets/images/sprites/sprite.svg#scroll-btn`)

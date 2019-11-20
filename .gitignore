@@ -1,8 +1,8 @@
 node_modules
-src
-package.json
+# src
+# package.json
 package-lock.json
-gulpfile.js
+# gulpfile.js
 smartgrid.js
-sprite.config.js
-webpack.config.js
+# sprite.config.js
+# webpack.config.js

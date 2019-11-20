@@ -1,7 +1,7 @@
 .menu {
 
   &.header__menu {
-    display: flex;
+    display: none;
     position: fixed;
     background: rgba(0,0,0,0.8);
     top: 0;
@@ -15,6 +15,10 @@
     align-items: center;
     text-align: center;
     z-index: 10;
+
+    @media screen and (max-width: 1024px) {
+      display: flex;
+    }
   }
 
   @media screen and (max-width: 1024px) {

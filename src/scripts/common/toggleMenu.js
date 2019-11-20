@@ -1,7 +1,7 @@
 export const toggleMenu = function () {
 
   $('.burger__menu').click(function () {
-    $('.burger').toggleClass('toggle-active');
+    // $('.burger').toggleClass('toggle-active');
     
     $('.menu').toggleClass('header__menu');
   });

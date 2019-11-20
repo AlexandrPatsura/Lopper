@@ -3,7 +3,7 @@
   background-position: top left;
   background-repeat: no-repeat;
   mix-blend-mode: multiply;
-  background-image: url('./../images/features-bg.png');
+  background-image: url('./../images/features-bg.png'), url('./../images/features-bg.webp');
   background-size: 65% 100%;
 
   &::before {

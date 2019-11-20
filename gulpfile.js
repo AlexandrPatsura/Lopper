@@ -22,7 +22,7 @@ global.$ = {
       dest: 'build/assets/styles/'
     },
     images: {
-      src: 'src/images/**/*.{jpg,jpeg,png}',
+      src: 'src/images/**/*.{jpg,jpeg,png, webp}',
       dest: 'build/assets/images/'
     },
     sprites: {
